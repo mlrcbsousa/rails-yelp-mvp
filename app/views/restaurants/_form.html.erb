@@ -1,0 +1,8 @@
+<!-- app/views/restaurants/_form.html.erb -->
+<%= simple_form_for(restaurant) do |f| %>
+  <%= f.input :name, class: 'form-control' %>
+  <%= f.input :address, class: 'form-control' %>
+  <%= f.input :phone_number, class: 'form-control' %>
+  <%= f.input :category, class: 'form-control dropdown' %>
+  <%= f.submit "add a restaurant", class: 'btn btn-outline-secondary' %>
+<% end %>
